@@ -13,13 +13,13 @@
     "db:studio": "prisma studio"
   },
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "axios": "^1.13.2",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "@prisma/client": "^5.22.0"
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "prisma": "^5.22.0"
