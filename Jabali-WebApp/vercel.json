@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/react-core"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "https://jaali-reboot-v2.onrender.com/api/$1"
+    },
+    {
+      "handle": "filesystem"
+    }
+  ]
+}
