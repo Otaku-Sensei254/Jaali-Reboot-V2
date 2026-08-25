@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://jaali-reboot-v2.onrender.com/$1"
+      "destination": "https://jaali-reboot-v2.onrender.com/api/$1"
     }
   ]
 }
