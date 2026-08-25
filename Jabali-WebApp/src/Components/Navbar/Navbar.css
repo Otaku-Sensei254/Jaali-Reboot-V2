@@ -1,0 +1,297 @@
+/* src/Components/Navbar/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--surface);
+  color: var(--text);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: var(--text);
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-icon:hover {
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
+.menu-icon:active {
+  transform: scale(0.95);
+}
+
+/* Center nav links */
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.nav-item {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-item.active {
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Right section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.05);
+}
+
+/* Logout dropdown */
+.logout-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  min-width: 200px;
+  animation: slideDown 0.2s ease-out;
+}
+
+@media (max-width: 768px) {
+  .logout-dropdown {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    margin-top: 0;
+    min-width: 280px;
+    max-width: 90vw;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logout-confirm p {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 500;
+  text-align: center;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logout-confirm-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--error);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-confirm-btn:hover {
+  background: color-mix(in srgb, var(--error) 80%, black);
+}
+
+.logout-cancel-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-cancel-btn:hover {
+  background: color-mix(in srgb, var(--border) 20%, transparent);
+}
+
+/* Overlay when logout popup shows */
+.logout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 1000;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-center {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--surface);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-center.open {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 90%;
+    text-align: center;
+  }
+
+  .username {
+    display: none;
+  }
+
+  .nav-right {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-item {
+    width: 90%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .menu-icon svg {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+
+/* Dark mode adjustments */
+body.dark .logout-dropdown {
+  background: color-mix(in srgb, var(--surface) 98%, transparent);
+  border-color: color-mix(in srgb, var(--border) 50%, transparent);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .nav-item,
+  .user-avatar,
+  .logout-confirm-btn,
+  .logout-cancel-btn {
+    transition: none;
+  }
+  
+  .user-avatar:hover {
+    transform: none;
+  }
+  
+  .logout-dropdown {
+    animation: none;
+  }
+}

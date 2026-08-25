@@ -1,0 +1,54 @@
+{
+  "stories": [
+    {
+      "id": "001",
+      "title": "The Clever Monkey",
+      "description": "A story about a clever monkey who helps his forest friends solve problems.",
+      "age_range": "4-8",
+      "category": "Animal Stories",
+      "thumbnail": "/images/clever-monkey.jpg",
+      "content": [
+        {
+          "page": 1,
+          "text": "Deep in the heart of an African forest lived a very clever monkey named Zuri. Zuri loved helping all the animals in the forest solve their problems.",
+          "image": "monkey-1.jpg"
+        },
+        {
+          "page": 2,
+          "text": "One day, Little Bird came to Zuri with tears in her eyes. 'I can't find my way back to my nest!' she cried. Zuri smiled and said, 'Don't worry, I'll help you!'",
+          "image": "monkey-2.jpg"
+        },
+        {
+          "page": 3,
+          "text": "Zuri remembered seeing Little Bird's nest near the tall banana tree. He quickly led her there, and she was overjoyed to be home.",
+          "image": "monkey-3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "title": "The Dancing Giraffe",
+      "description": "Meet Twiga, a giraffe who learns that being different is special.",
+      "age_range": "3-7",
+      "category": "Self-Esteem",
+      "thumbnail": "/images/dancing-giraffe.jpg",
+      "content": [
+        {
+          "page": 1,
+          "text": "Twiga was a young giraffe who loved to dance. But the other animals would laugh because they had never seen a dancing giraffe before.",
+          "image": "giraffe-1.jpg"
+        },
+        {
+          "page": 2,
+          "text": "'Giraffes don't dance!' they would say. But Twiga didn't care. She kept practicing her moves every day under the African sun.",
+          "image": "giraffe-2.jpg"
+        },
+        {
+          "page": 3,
+          "text": "One day, there was a big celebration in the savannah. When Twiga started dancing, everyone was amazed by her graceful moves. Now, all the animals wanted to learn how to dance like Twiga!",
+          "image": "giraffe-3.jpg"
+        }
+      ]
+    }
+  ]
+}

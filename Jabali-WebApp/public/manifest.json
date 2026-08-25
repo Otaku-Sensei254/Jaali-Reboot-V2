@@ -1,0 +1,25 @@
+{
+  "short_name": "Jabali",
+  "name": "Jabali Web App",
+  "icons": [
+    {
+      "src": "jab.jpeg",
+      "sizes": "128x128 64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "jab.jpeg",
+      "type": "image/png",
+      "sizes": "200x200"
+    },
+    {
+      "src": "jab.jpeg",
+      "type": "image/png",
+      "sizes": "812x812"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

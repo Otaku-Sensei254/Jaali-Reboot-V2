@@ -1,0 +1,38 @@
+.dark {
+  --background: #121212;
+  --foreground: #f0f0f0;
+  --card: #1e1e1e;
+  --card-foreground: #f0f0f0;
+  --primary: #a8c9ff;
+  --primary-foreground: #1e1e1e;
+  --secondary: #d4c5fd;
+  --secondary-foreground: #1e1e1e;
+  --muted: #2a2a2a;
+  --muted-foreground: #9ca3af;
+  --accent: #b8e5d2;
+  --accent-foreground: #1e1e1e;
+  --destructive: #ef4444;
+  --destructive-foreground: #f0f0f0;
+  --border: rgba(168, 201, 255, 0.2);
+  --input: rgba(168, 201, 255, 0.2);
+  --input-background: #1e1e1e;
+  --switch-background: #4b5563;
+  --ring: #a8c9ff;
+
+  /* Jabali Dark Pastel Palette */
+  --pastel-blue: #a8c9ff;
+  --pastel-lavender: #d4c5fd;
+  --pastel-green: #b8e5d2;
+  --pastel-cream: #fde68a;
+  --pastel-pink: #fcd34d;
+
+  /* Sidebar */
+  --sidebar: #1e1e1e;
+  --sidebar-foreground: #f0f0f0;
+  --sidebar-primary: #a8c9ff;
+  --sidebar-primary-foreground: #1e1e1e;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #f0f0f0;
+  --sidebar-border: rgba(168, 201, 255, 0.2);
+  --sidebar-ring: #a8c9ff;
+}

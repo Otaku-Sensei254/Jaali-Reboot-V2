@@ -1,0 +1,257 @@
+/* ═══════════════════════════════════════════════════
+   JABALI DESIGN SYSTEM
+   Soft & Calming — built for children on the spectrum
+   ═══════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+/* ─── Design Tokens: Light Mode ─── */
+:root {
+  /* Layout */
+  --sidebar-width: 264px;
+  --topbar-height: 68px;
+
+  /* Surfaces */
+  --bg: #F5F3EE;
+  --bg-secondary: #EDEBE4;
+  --surface: #FFFFFF;
+  --surface-elevated: #FAFAF7;
+  --surface-overlay: rgba(255, 255, 255, 0.85);
+
+  /* Sidebar */
+  --sidebar-bg: #2D3250;
+  --sidebar-surface: #373C5E;
+  --sidebar-text: #9BA8D4;
+  --sidebar-text-active: #F0F2FF;
+  --sidebar-accent: #7986CB;
+  --sidebar-accent-glow: rgba(121, 134, 203, 0.30);
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+
+  /* Brand Colors */
+  --primary: #7986CB;
+  --primary-light: #C5CAE9;
+  --primary-dark: #5C6BC0;
+  --primary-alpha: rgba(121, 134, 203, 0.12);
+  --secondary: #80CBC4;
+  --secondary-light: #B2DFDB;
+  --secondary-dark: #4DB6AC;
+  --secondary-alpha: rgba(128, 203, 196, 0.12);
+  --accent: #FFB74D;
+  --accent-light: #FFE0B2;
+  --accent-dark: #FB8C00;
+
+  /* Text */
+  --text: #2B2F52;
+  --text-secondary: #626880;
+  --text-muted: #9CA3AF;
+  --text-on-primary: #FFFFFF;
+  --foreground: #2B2F52;
+
+  /* State Colors */
+  --success: #81C784;
+  --success-light: #C8E6C9;
+  --success-dark: #4CAF50;
+  --warning: #FFB74D;
+  --warning-light: #FFE0B2;
+  --error: #E57373;
+  --error-light: #FFCDD2;
+  --info: #64B5F6;
+  --info-light: #BBDEFB;
+
+  /* Borders */
+  --border: #E4E1D8;
+  --border-light: #EDE9E0;
+  --border-focus: #7986CB;
+
+  /* Radius */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 4px rgba(43, 47, 82, 0.04);
+  --shadow-sm: 0 2px 10px rgba(43, 47, 82, 0.06);
+  --shadow-md: 0 4px 20px rgba(43, 47, 82, 0.08);
+  --shadow-lg: 0 8px 40px rgba(43, 47, 82, 0.10);
+  --shadow-xl: 0 16px 60px rgba(43, 47, 82, 0.12);
+  --shadow-inset: inset 0 2px 6px rgba(43, 47, 82, 0.06);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+  --transition: all 0.25s var(--ease-out);
+  --transition-slow: all 0.4s var(--ease-out);
+  --transition-fast: all 0.15s var(--ease-out);
+
+  /* Typography Scale */
+  --text-xs:   0.72rem;
+  --text-sm:   0.84rem;
+  --text-base: 0.95rem;
+  --text-md:   1.05rem;
+  --text-lg:   1.2rem;
+  --text-xl:   1.4rem;
+  --text-2xl:  1.8rem;
+  --text-3xl:  2.2rem;
+  --text-4xl:  2.8rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3.5rem;
+}
+
+/* ─── Design Tokens: Dark Mode ─── */
+[data-theme='dark'] {
+  --bg: #181B2D;
+  --bg-secondary: #121526;
+  --surface: #1F2235;
+  --surface-elevated: #252840;
+  --surface-overlay: rgba(31, 34, 53, 0.90);
+
+  --sidebar-bg: #111325;
+  --sidebar-surface: #181B2D;
+  --sidebar-text: #7885B0;
+  --sidebar-text-active: #DDE2FF;
+  --sidebar-accent: #7986CB;
+  --sidebar-accent-glow: rgba(121, 134, 203, 0.25);
+  --sidebar-border: rgba(255, 255, 255, 0.05);
+
+  --primary: #9FA8DA;
+  --primary-light: #3D4777;
+  --primary-dark: #7986CB;
+  --primary-alpha: rgba(159, 168, 218, 0.12);
+  --secondary: #80CBC4;
+  --secondary-light: #1D3E3C;
+  --secondary-dark: #4DB6AC;
+  --secondary-alpha: rgba(128, 203, 196, 0.10);
+  --accent: #FFB74D;
+  --accent-light: #3D2E00;
+
+  --text: #DDE2FF;
+  --text-secondary: #8892B8;
+  --text-muted: #5A6080;
+  --text-on-primary: #FFFFFF;
+  --foreground: #DDE2FF;
+
+  --success: #A5D6A7;
+  --success-light: #1B3B1D;
+  --success-dark: #81C784;
+  --warning: #FFCC80;
+  --warning-light: #3D2600;
+  --error: #EF9A9A;
+  --error-light: #3D1212;
+  --info: #90CAF9;
+  --info-light: #0D2A4A;
+
+  --border: #282C45;
+  --border-light: #1F2235;
+  --border-focus: #9FA8DA;
+
+  --shadow-xs: 0 1px 4px rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.20);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.30);
+  --shadow-xl: 0 16px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* ─── Base Reset ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Nunito', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out);
+  overflow-x: hidden;
+}
+
+/* ─── Typography ─── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+p { line-height: 1.65; }
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover { text-decoration: none; }
+
+img, svg { display: block; max-width: 100%; }
+
+button {
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ─── Utility Classes ─── */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── Focus Styles (Accessibility) ─── */
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ─── Reduced Motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

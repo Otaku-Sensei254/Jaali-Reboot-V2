@@ -1,0 +1,38 @@
+:root {
+  --background: #114abb;
+  --foreground: #333333;
+  --card: #ffffff;
+  --card-foreground: #333333;
+  --primary: #7fa8d7;
+  --primary-foreground: #ffffff;
+  --secondary: #c4b5fd;
+  --secondary-foreground: #333333;
+  --muted: #e8f4f8;
+  --muted-foreground: #6b7280;
+  --accent: #a8d5ba;
+  --accent-foreground: #333333;
+  --destructive: #f87171;
+  --destructive-foreground: #ffffff;
+  --border: rgba(127, 168, 215, 0.2);
+  --input: rgba(127, 168, 215, 0.2);
+  --input-background: #ffffff;
+  --switch-background: #d1d5db;
+  --ring: #7fa8d7;
+
+  /* Jabali Pastel Palette */
+  --pastel-blue: #7fa8d7;
+  --pastel-lavender: #c4b5fd;
+  --pastel-green: #a8d5ba;
+  --pastel-cream: #fef3c7;
+  --pastel-pink: #fbbf24;
+
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #333333;
+  --sidebar-primary: #7fa8d7;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8f4f8;
+  --sidebar-accent-foreground: #333333;
+  --sidebar-border: rgba(127, 168, 215, 0.2);
+  --sidebar-ring: #7fa8d7;
+}
