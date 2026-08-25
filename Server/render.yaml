@@ -2,5 +2,6 @@ services:
   - type: web
     name: jabali-server
     env: node
-    buildCommand: "echo 'No build step required'"
+    rootDir: Server
+    buildCommand: "npm install && echo 'No build step required'"
     startCommand: "npm start"
