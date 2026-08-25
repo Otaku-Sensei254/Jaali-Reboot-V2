@@ -4,6 +4,7 @@
   "description": "Jabali backend API with auth, child profiles, and Gutendex proxy",
   "main": "server.js",
   "scripts": {
+    "build": "echo 'No build step required'",
     "start": "node server.js",
     "dev": "node server.js",
     "db:generate": "prisma generate",
