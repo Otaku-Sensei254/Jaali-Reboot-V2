@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/(.*)",
-      "dest": "https://jaali-reboot-v2.onrender.com/$1"
-    },
-    {
-      "handle": "filesystem"
+      "source": "/api/(.*)",
+      "destination": "https://jaali-reboot-v2.onrender.com/$1"
     }
   ]
 }
