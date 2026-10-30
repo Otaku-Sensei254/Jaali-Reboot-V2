@@ -7,6 +7,7 @@ const childrenRoutes = require('./routes/children');
 const booksRoutes = require('./routes/books');
 
 const app = express();
+app.get('/health', (req, res) => res.json({ status: 'ok', service: 'jabali', time: new Date().toISOString() }));
 
 app.use(cors());
 app.use(express.json());
